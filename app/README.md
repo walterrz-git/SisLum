@@ -13,10 +13,12 @@ La primera compilación necesita conexión para descargar las dependencias de Ma
 La conexión local utiliza la configuración de MySQL ya existente fuera del proyecto.
 No hay que ingresar ni copiar la contraseña al código.
 
-También se puede ejecutar desde Terminal, ubicado en `SisLum`:
+También se puede ejecutar desde Terminal, ubicado en `SisLum`. Después de descargar o clonar
+el repositorio, dar permiso de ejecución a los scripts con `chmod` como se indica a continuación:
 
 ```sh
 cd app
+chmod +x ./*.command ../entorno/mysql.command
 ./ejecutar.command
 ```
 
