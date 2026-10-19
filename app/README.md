@@ -76,4 +76,4 @@ Con la base configurada, se pueden ejecutar con:
 
 Revisan el registro de pacientes, los turnos, las atenciones y los cobros, incluyendo duplicados y operaciones simultáneas. Están en `src/test/java`, no usan JUnit y eliminan los datos que crean al terminar.
 
-Para este TP quedaron estos tres casos y las consultas necesarias. El login, los roles, la administración de catálogos y la configuración de horarios quedan para más adelante. El material separado está en [futuros-casos-de-uso](../futuros-casos-de-uso).
+Para este TP se implementaron los tres casos del circuito: registrar turno, registrar atención y registrar cobro, junto con las consultas de pacientes, agenda e historia clínica.
