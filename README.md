@@ -1,27 +1,27 @@
 # SisLum
 
-Prototipo de escritorio para el centro de medicina estética Lumina, desarrollado en Java con Swing y MySQL para el trabajo práctico 3.
+Este es el proyecto que estoy haciendo para el TP3 de Seminario de Práctica Informática. Es un sistema para un centro de medicina estética, hecho en Java con Swing y MySQL.
 
-Implementa el circuito **Registrar turno → Registrar atención → Registrar cobro**, con alta y búsqueda de pacientes, consulta de agenda e historia clínica. Los cobros se pueden consultar por fecha del turno, paciente y estado Pendiente, Pagado o Todos.
+Por ahora se puede registrar un turno, cargar la atención del paciente y registrar el cobro. También tiene búsqueda y alta de pacientes, agenda e historia clínica. En Cobros se pueden consultar los pendientes y los que ya están pagados.
 
-## Contenido
+## Cómo abrirlo
 
-- [app](app/README.md): proyecto Maven, código Java, formularios de NetBeans, scripts SQL e instrucciones de ejecución.
-- [entorno](entorno/README.md): utilidades del entorno local en macOS.
-- [futuros-casos-de-uso](futuros-casos-de-uso/README.md): material separado para funcionalidades posteriores; no forma parte del proyecto Maven activo.
+Usé NetBeans para trabajar en el proyecto. Hay que tener Java 17 o superior y MySQL.
 
-## Ejecutar
+1. Ejecutar los tres archivos de [app/sql](app/sql) en orden: `01_esquema.sql`, `02_registrar_turno.sql` y `03_registrar_cobro.sql`.
+2. Configurar la conexión con las variables `SISLUM_DB_URL`, `SISLUM_DB_USER` y `SISLUM_DB_PASSWORD`. La base se llama `SisLum` y la conexión por defecto usa `127.0.0.1:3306`.
+3. En NetBeans, ir a **File > Open Project**, elegir la carpeta `app` y ejecutar **Run Project**.
 
-Se requiere Java 17 o superior, Maven o NetBeans con soporte Maven y MySQL. Las dependencias Java se descargan desde Maven.
+La clase principal es `ar.com.sislum.SisLum`. La primera vez Maven descarga las dependencias, así que hace falta conexión a internet.
 
-1. Ejecutar en MySQL los archivos `app/sql/01_esquema.sql`, `02_registrar_turno.sql` y `03_registrar_cobro.sql`, en ese orden.
-2. Configurar `SISLUM_DB_URL`, `SISLUM_DB_USER` y `SISLUM_DB_PASSWORD` con los datos de la conexión. La URL predeterminada apunta a la base `SisLum` en `127.0.0.1:3306`.
-3. Abrir la carpeta `app` en NetBeans y ejecutar **Run Project**. Desde una terminal con las variables configuradas también se puede usar `cd app` y `mvn compile exec:java`.
+También se puede ejecutar desde una terminal, entrando a `app` y usando `mvn compile exec:java`, con la conexión a la base configurada.
 
-La clase principal es `ar.com.sislum.SisLum`. Las instrucciones completas se encuentran en [app/README.md](app/README.md).
+## Carpetas
 
-## Alcance
+- [app](app): código, pantallas y SQL. En su [README](app/README.md) dejé más detalles para usarlo.
+- [entorno](entorno): scripts que uso para ejecutar MySQL en mi Mac.
+- [futuros-casos-de-uso](futuros-casos-de-uso): material que quedó separado para continuar más adelante.
 
-Esta etapa no incluye login, roles, administración de catálogos, configuración individual de horarios, bloqueos ni feriados. Los profesionales y tratamientos iniciales son ficticios; no se incluyen datos de pacientes ni una copia de la base local.
+Para esta entrega trabajé el circuito **turno → atención → cobro**. El login, los roles y la administración de profesionales y tratamientos quedan para otra etapa.
 
-Las credenciales y los archivos generados permanecen fuera del repositorio.
+Los profesionales, tratamientos y precios iniciales son de ejemplo. No subí contraseñas ni datos de pacientes.
