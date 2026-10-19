@@ -20,8 +20,7 @@ También se puede ejecutar desde una terminal, entrando a `app` y usando `mvn co
 
 - [app](app): código, pantallas y SQL. En su [README](app/README.md) dejé más detalles para usarlo.
 - [entorno](entorno): scripts que uso para ejecutar MySQL en mi Mac.
-- [futuros-casos-de-uso](futuros-casos-de-uso): material que quedó separado para continuar más adelante.
 
-Para esta entrega trabajé el circuito **turno → atención → cobro**. El login, los roles y la administración de profesionales y tratamientos quedan para otra etapa.
+Para esta entrega trabajé el circuito **turno → atención → cobro**, con alta y búsqueda de pacientes, consulta de agenda e historia clínica.
 
 Los profesionales, tratamientos y precios iniciales son de ejemplo. No subí contraseñas ni datos de pacientes.
