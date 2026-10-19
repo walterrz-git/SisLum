@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoSetComponentName" type="boolean" value="false" />
+    <AuxValue name="FormSettings_generateFQN" type="boolean" value="true" />
+    <AuxValue name="FormSettings_variablesModifier" type="int" value="2" />
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-118,0,0,4,56" />
+  </AuxValues>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+    <Property name="hgap" type="int" value="12" />
+    <Property name="vgap" type="int" value="12" />
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblTitulo">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="North" />
+        </Constraint>
+      </Constraints>
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pacientes" />
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="panelListado">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center" />
+        </Constraint>
+      </Constraints>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+        <Property name="hgap" type="int" value="8" />
+        <Property name="vgap" type="int" value="8" />
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panelBusqueda">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="North" />
+            </Constraint>
+          </Constraints>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+            <Property name="alignment" type="int" value="0" />
+            <Property name="hgap" type="int" value="8" />
+            <Property name="vgap" type="int" value="8" />
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblBusqueda">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nombre, apellido o DNI" />
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtBusqueda">
+              <Properties>
+                <Property name="columns" type="int" value="22" />
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnBuscar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Buscar" />
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnNuevoPaciente">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nuevo paciente" />
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="scrollPacientes">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center" />
+            </Constraint>
+          </Constraints>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout" />
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="tablaPacientes">
+              <Properties>
+                <Property name="rowHeight" type="int" value="28" />
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="5" rowCount="0">
+                    <Column editable="false" title="DNI" type="java.lang.Object" />
+                    <Column editable="false" title="Nombre" type="java.lang.Object" />
+                    <Column editable="false" title="Apellido" type="java.lang.Object" />
+                    <Column editable="false" title="Teléfono" type="java.lang.Object" />
+                    <Column editable="false" title="Email" type="java.lang.Object" />
+                  </Table>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lblEstado">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="South" />
+        </Constraint>
+      </Constraints>
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Los pacientes se guardan en MySQL." />
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
