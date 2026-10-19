@@ -1,0 +1,10 @@
+.DS_Store
+app/target/
+**/nbproject/private/
+*.log
+/entregables/
+.env
+.env.*
+*.cnf
+*.pem
+*.key
