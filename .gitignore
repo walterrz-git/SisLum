@@ -8,3 +8,5 @@ app/target/
 *.cnf
 *.pem
 *.key
+
+/respaldo-local/
